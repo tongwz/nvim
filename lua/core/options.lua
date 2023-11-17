@@ -35,6 +35,7 @@ opt.splitbelow = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
+opt.guifont = "JetBrainsMonoNerdFontMono-Regular" -- 选择字体
 
 local cmdX = vim.cmd
 -- 颜色外观
@@ -46,3 +47,17 @@ vim.g.NERDSpaceDelims = 1
 -- vim.opt.shell = 'pwsh' -- checkhealth查看nvim的健康状况的时候 提示 ：ERROR pwsh: not available 情况测试能行不
 -- vim.opt.shellcmdflag = '-nologo -noprofile -ExecutionPolicy RemoteSigned -command'
 -- vim.opt.shellxquote = ''
+-- 设置剪贴板管理器为xclip
+-- vim.g.clipboard = {
+--   name = 'xsel',
+--   copy = {
+--     ['+'] = 'xsel -selection clipboard',
+--     ['*'] = 'xsel -selection clipboard',
+--   },
+--   paste = {
+--     ['+'] = 'xsel -selection clipboard -o',
+--     ['*'] = 'xsel -selection clipboard -o',
+--   },
+--   cache_enabled = 0,
+-- }
+

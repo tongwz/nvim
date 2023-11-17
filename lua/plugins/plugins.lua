@@ -69,7 +69,7 @@ return require('packer').startup(function(use)
     -- 'numToStr/Comment.nvim', -- 自动注释
     'preservim/nerdcommenter' -- 另外一个注释插件
   }
-  use 'ethanholz/nvim-lastplace'
+  use 'ethanholz/nvim-lastplace' -- 记住上次文件打开的位置
   -- use 'JoosepAlviste/nvim-ts-context-commentstring' -- 注释代码扩展其他语言
 
   -- My plugins here
