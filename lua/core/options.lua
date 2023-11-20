@@ -10,8 +10,8 @@ vim.opt.backup = false
 vim.opt.showtabline = 2 -- 显示两行行号
 
 -- 缩进
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
