@@ -1,7 +1,8 @@
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
-  return
-end
+-- local cmp_status_ok, cmp = pcall(require, "cmp")
+-- if not cmp_status_ok then
+  -- return
+-- end
+local cmp = require("cmp")
 
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
@@ -57,12 +58,14 @@ cmp.setup ({
       "s",
     }),
   }),
-  
+
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
   }),
-  
+
+  -- 快捷键
+  -- mapping = require("plugins.keybindings").cmp(),
 })

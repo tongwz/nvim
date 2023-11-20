@@ -48,8 +48,16 @@ return require('packer').startup(function(use)
     "williamboman/mason.nvim", -- LSP和mason
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    "williamboman/nvim-lsp-installer"
+    "williamboman/nvim-lsp-installer",
   }
+  use ({
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+  })
+
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
   use "L3MON4D3/LuaSnip" -- snippets 引擎，不安装这个自动补全出问题
