@@ -7,6 +7,8 @@ vim.opt.numberwidth = 4 -- 行号宽度
 
 -- 打开nvim不需要备份文件 这里可以方便关闭文件 这样不会有swap文件影响关闭
 vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.swapfile = false
 vim.opt.showtabline = 2 -- 显示两行行号
 
 -- 缩进
